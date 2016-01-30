@@ -1,0 +1,27 @@
+﻿body 
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+i {
+    color:#0000aa;
+}
+
+h5, h5 a {
+    margin:0;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+    color: #aaa;
+}
+
+#themer
+{
+    text-align:center;
+}
+
+.centered {
+    text-align:center;
+}
