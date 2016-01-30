@@ -4,27 +4,47 @@
         <link rel="Stylesheet" href="style.css" />
         <script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
         <script type="text/javascript" language="javascript" src="myScript.js"></script>
-        <script src="socialcount/socialcount.min.js"></script>
         <link href="socialcount/socialcount-with-icons.min.css" rel="stylesheet" />
         <meta property="og:image" content="http://drawlly.com/drawlly800.png" />
+        <link href='https://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <h1 id="themer">drawlly says..<br />Try drawing <i id="tagline">a giant frisbee chasing a hairy goat</i>.</h1>
-        <h5><a href="#" id="refresh">refresh</a> -- <a id="myLink" href="#">permalink</a></h5>
-        <div class="centered"><img src="drawlly800.png" alt="logo" /></div>
+        <h1>drawlly thinks you should draw..</h1> 
+        <hr />
+        <div class="tagline">
+            <ul>
+                <li>A</li>
+                <li id="adj1">adjective</li>
+                <li id='noun1' class="noun">
+                    <img />
+                    <span>hi</span>
+                </li>
+                <li id='verb'>verb</li>
+                <li>a</li>
+                <li id='adj2'>adjective</li>
+                <li id='noun2' class="noun">
+                    <img />
+                    <span>bye</span>
+                </li>
+            </ul>
+        </div>
+        <h5><a href="#" id="refresh">refresh</a> -- <a id="myLink" href="#">permalink</a></h5>        
         <div class="centered">
             <ul class="socialcount" data-url="http://www.drawlly.com/" data-counts="true">
                 <li class="facebook">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.drawlly.com/" title="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.drawlly.com" title="Share on Facebook" id="facebook_link">
                         <span class="social-icon icon-facebook"></span><span class="count">Like</span>
                     </a>
                 </li>
                 <li class="twitter">
-                    <a href="https://twitter.com/intent/tweet?text=http://www.drawlly.com/" title="Share on Twitter">
+                    <a href="https://twitter.com/intent/tweet?text=http://www.drawlly.com" title="Share on Twitter" id="twitter_link">
                         <span class="social-icon icon-twitter"></span><span class="count">Tweet</span>
                     </a>
                 </li>
             </ul>
+        </div>
+        <div id='logo'>
+            <img src="drawlly800.png" alt="logo" />            
         </div>
 
         <!-- Start of Google Code -->

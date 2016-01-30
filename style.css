@@ -1,27 +1,67 @@
 ﻿body 
 {
-    margin:0;
+    margin:5px;
     padding:0;
     font-family: sans-serif;
 }
 
-i {
-    color:#0000aa;
+h1{
+    font-family: 'Happy Monkey', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #777;
+}
+
+hr{
+    border: none;
+    border-bottom: solid 1px #eee;
+    margin-bottom: 30px;
 }
 
 h5, h5 a {
     margin:0;
-    padding:0;
+    padding:10px;
     text-align:center;
     text-decoration:none;
     color: #aaa;
 }
 
-#themer
-{
+.centered {
     text-align:center;
 }
 
-.centered {
-    text-align:center;
+#logo{
+    text-align: center;
+}
+
+.tagline{
+    text-align: center;
+}
+
+.tagline ul{
+    padding: 0;
+    display: inline-block;
+    margin: auto;
+}
+
+.tagline li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 50px;
+    padding: 0 5px;
+}
+
+.noun{
+    max-height: 150px;
+}
+
+.noun img{
+    height:100%;
+    display: block;
+    margin:auto;
+}
+
+.noun span{
+    
 }
