@@ -34,6 +34,10 @@ h5, h5 a {
     text-align: center;
 }
 
+#logo img{
+    width:50%;
+}
+
 .tagline{
     text-align: center;
 }
