@@ -57,7 +57,7 @@ h5, h5 a {
 }
 
 .noun{
-    max-height: 150px;
+    max-height: 33%;
 }
 
 .noun img{
@@ -68,4 +68,26 @@ h5, h5 a {
 
 .noun span{
     
+}
+
+
+@media (max-width: 700px) {
+    #verb{
+        color: green;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    li.noun, #verb{
+        display: block;
+    }
+
+    h5, h5 a {
+    margin:0;
+    padding:10px;
+    text-align:center;
+    text-decoration:none;
+    color: #aaa;
+    font-size: 30px;
+}
 }
