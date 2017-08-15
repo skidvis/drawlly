@@ -1,6 +1,6 @@
 ﻿var shortlink; 
 var search;
-var datalayer = datalayer || [];
+var dataLayer = window.dataLayer || [];
 
 $(function () {
     $("#refresh").bind("click", function () { doTag(1) });
@@ -36,7 +36,7 @@ function doTag(fresh) {
 
     $("#tagline").text(tagline);
 
-    datalayer.push([
+    dataLayer.push([
         {'tagline': tagline, 'shortlink': myNumbers.join("-")}
     ]);
 
