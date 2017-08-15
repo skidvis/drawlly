@@ -1,6 +1,6 @@
 ﻿var shortlink; 
 var search;
-var dataLayer = dataLayer || [];
+var datalayer = datalayer || [];
 
 $(function () {
     $("#refresh").bind("click", function () { doTag(1) });
