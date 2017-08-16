@@ -2,6 +2,10 @@
 var search;
 var dataLayer = window.dataLayer || [];
 
+ga('create', 'UA-1363435-17', 'auto', 'ninja');
+ga('send', 'pageview', '/vpv/drawlly/pageview');
+ga('ninja.send', 'pageview', '/vpv/ninja/pageview');
+
 $(function () {
     $("#refresh").bind("click", function () { doTag(1) });
     doTag(0);
