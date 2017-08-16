@@ -38,6 +38,7 @@ function doTag(fresh) {
     $("#tagline").text(tagline);
 
     dataLayer.push({
+        event: 'idea_refresh',
         tagline: tagline, 
         shortlink: myNumbers.join("-")
     });
