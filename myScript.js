@@ -39,7 +39,7 @@ function doTag(fresh) {
     $("#tagline").text(tagline);
 
     dataLayer.push([
-        {'tagline': tagline, 'shortlink': myNumbers.join("-")}
+        {tagline: tagline, shortlink: myNumbers.join("-")}
     ]);
 
     $('#adj1').text(adj1);
