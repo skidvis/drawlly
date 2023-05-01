@@ -75,7 +75,7 @@ function get_image(keyword, img){
           type: 'GET',
           dataType: 'json',
           success: function(data){ got_image(data, img) },
-          error: function() { alert('boo!'); },
+          error: function() { },
           beforeSend: setHeader
         });
 }
