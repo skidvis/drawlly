@@ -66,17 +66,15 @@ h5, h5 a {
     margin:auto;
 }
 
-.noun span{
-    
+#verb{
+    color: green;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
 @media (max-width: 700px) {
-    #verb{
-        color: green;
-        font-weight: bold;
-        font-style: italic;
-    }
+
 
     li.noun, #verb{
         display: block;
