@@ -1,21 +1,7 @@
 <template>
     <div>
         <div class="tagline">
-            <ul>
-                <li>A</li>
-                <li>{{ adj1 }}</li>
-                <li class="noun">
-                    <span>{{ noun1 }}</span>
-                    <img alt="" />
-                </li>
-                <li class="verb">{{ verb }}</li>
-                <li>a</li>
-                <li>{{ adj2 }}</li>
-                <li class="noun">
-                    <span>{{ noun2 }}.</span>
-                    <img alt="" />
-                </li>
-            </ul>
+          A {{ adj1 }} {{ noun1 }} <span class="verb">{{ verb }}</span> a {{ adj2 }} {{ noun2 }}
         </div>
         <h5>
             <a href="#" @click.prevent="refresh">refresh</a> -- 
@@ -149,5 +135,11 @@ export default {
     color: green;
     font-weight: bold;
     font-style: italic;
+}
+
+.tagline{
+  font-family: 'Happy Monkey', cursive;
+  font-size: 50px;
+  text-align: center;
 }
 </style>
