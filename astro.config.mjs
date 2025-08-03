@@ -6,6 +6,5 @@ import vue from '@astrojs/vue';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://drawlly.com',
-  base: 'drawlly',
   integrations: [vue()]
 });
