@@ -1,43 +1,89 @@
-# Astro Starter Kit: Minimal
+# drawlly
 
-```sh
-npm create astro@latest -- --template minimal
+**drawlly** generates daily drawing prompts using a randomized combination of adjectives, nouns, and verbs.
+
+Visit [drawlly.com](https://drawlly.com) to get inspired!
+
+---
+
+## 🎨 Features
+
+- Random drawing prompt generator (e.g., *"a bad alligator painting a floating tiger"*).
+- Permalink system—share specific prompts via URL query parameters.
+- Social media sharing buttons for Facebook and Twitter.
+- Google Analytics integration for pageview and idea refresh tracking.
+- Vue 3 component embedded in Astro pages.
+
+---
+
+## 🛠 Installation
+
+```bash
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## ▶️ Usage
 
-Inside of your Astro project, you'll see the following folders and files:
+```bash
+npm run dev      # Start dev server at localhost:4321
+npm run build    # Build production site to ./dist/
+npm run preview  # Preview the built site
+```
 
-```text
+---
+
+## 📁 Project Structure
+
+```
 /
-├── public/
+├── public/               # Static assets (images, styles, scripts)
+│   ├── drawlly800.png   # Logo image
+│   ├── style.css        # Global styles
+│   └── socialcount/     # Social sharing icons
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/       # Vue components
+│   │   └── Topic.vue    # Prompt generator component
+│   └── pages/           # Astro pages (route-based)
+│       └── index.astro  # Home page
+├── astro.config.mjs     # Astro configuration
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🌐 Configuration
 
-Any static assets, like images, can be placed in the `public/` directory.
+The site is configured at [drawlly.com](https://drawlly.com) via Astro:
 
-## 🧞 Commands
+```javascript
+// astro.config.mjs
+export default {
+  site: 'https://drawlly.com',
+  integrations: [vue()]
+};
+```
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🔀 How It Works
 
-## 👀 Want to learn more?
+The `Topic.vue` component randomly selects from arrays of adjectives, nouns, and verbs to generate prompts like:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+> **a** `adjective` `noun` `verb` **a** `adjective` `noun`
+
+- Refresh the page or click "refresh" to get a new prompt.
+- Share a specific prompt via the generated shortlink (e.g., `/?123-456-789-012-345`).
+
+---
+
+## 🚀 Deployment
+
+Built and deployed automatically via GitHub Actions (see `.github/workflows/astro-page.yml`).
+
+---
+
+## 📄 License
+
+<!-- TODO: Add license information if available -->
